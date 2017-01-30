@@ -6,10 +6,10 @@ It supports the DoIP network/transport layer specified in ISO 13400-2. And some 
 
 
 ## Download
-Windows binaries [link](https://github.com/tobras/wireshark_doip/releases)
+Windows binaries [here](https://github.com/tobras/wireshark_doip/releases).
 
 
 ## Windows installation
-The plugins require Visual C++ Redistributable for Visual Studio 2015 [link](https://www.microsoft.com/en-us/download/details.aspx?id=48145). 
+The plugins require [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145). 
 Copy the doip.dll and uds.dll to either "C:\Program Files\Wireshark\plugins\<Your Version>" or "C:\Users\<Your User>\AppData\Roaming\Wireshark\plugins"
 
