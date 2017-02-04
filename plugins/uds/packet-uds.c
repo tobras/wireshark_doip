@@ -249,7 +249,7 @@ void proto_register_uds(void)
 	"uds"                      /* abbrev     */
 	);
 
-    register_dissector("uds", dissect_uds_message, -1);
+ 
 
     proto_register_uds_header();
 
@@ -287,5 +287,6 @@ void proto_register_uds(void)
     proto_register_negative_response(proto_uds);
     
     proto_register_subtree_array(ett, array_length(ett));
+    register_dissector("uds", dissect_uds_message, proto_uds);
 }
 
