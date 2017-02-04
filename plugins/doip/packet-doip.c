@@ -272,6 +272,7 @@ void proto_register_doip(void)
     proto_register_diagnostic_message_nack(proto_doip);
     
     proto_register_subtree_array(ett, array_length(ett));
+    register_dissector ("doip", dissect_doip, proto_doip);
 }
 
 /* Register DoIP Protocol handler */
@@ -279,7 +280,7 @@ void proto_reg_handoff_doip(void)
 {
     dissector_handle_t doip_handle;
 
-    doip_handle = create_dissector_handle(dissect_doip, proto_doip);
+    doip_handle = find_dissector("doip");
     dissector_add_uint("udp.port", DOIP_PORT, doip_handle);
     dissector_add_uint("tcp.port", DOIP_PORT, doip_handle);
 //    ssl_dissector_add(DOIP_PORT, "doip", TRUE);
