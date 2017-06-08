@@ -245,8 +245,8 @@ void proto_register_uds(void)
 
     proto_uds = proto_register_protocol (
 	"UDS Protocol", /* name       */
-	"UDS",              /* short name */
-	"uds"                      /* abbrev     */
+	"UDS_DoIP",              /* short name */
+	"uds_doip"                      /* abbrev     */
 	);
 
  
