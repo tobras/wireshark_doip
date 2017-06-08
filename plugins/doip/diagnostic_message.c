@@ -15,7 +15,7 @@ void set_uds_info(tvbuff_t *tvb, packet_info *pinfo, gint offset, dissector_hand
 {
     if (uds_handle != 0)
     {
-	call_dissector(uds_handle, tvb_new_subset(tvb, offset + DIAG_MESSAGE_HEADER_SIZE, -1, -1), pinfo, parent_tree);
+	call_dissector(uds_handle, tvb_new_subset_length_caplen(tvb, offset + DIAG_MESSAGE_HEADER_SIZE, -1, -1), pinfo, parent_tree);
     }
 }
 
