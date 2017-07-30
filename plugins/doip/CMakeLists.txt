@@ -22,7 +22,7 @@
 include(WiresharkPlugin)
 
 # Plugin name and version info (major minor micro extra)
-set_module_info(uds 1 0 0 0)
+set_module_info(uds 1 1 0 0)
 
 set(DISSECTOR_SRC
 	generic_header_nack.c
