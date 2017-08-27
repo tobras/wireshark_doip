@@ -177,6 +177,7 @@ static void dissect_doip_message(tvbuff_t *tvb, packet_info *pinfo, proto_tree *
 // determine PDU length of protocol DoIP
 static guint get_doip_message_len(packet_info *pinfo _U_, tvbuff_t *tvb, int offset, void *p)
 {
+    (void) p;
     const guint DOIP_HEADER_LEN = 8;
     return (guint)tvb_get_ntohl(tvb, offset+4) + DOIP_HEADER_LEN; // length is at offset 4 and is 4 bytes
 }
