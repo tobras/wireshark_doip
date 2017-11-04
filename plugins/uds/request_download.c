@@ -22,7 +22,7 @@ static const value_string compression_encrypting[] = {
 	{ 0, NULL }
 };
 
-gint add_request_download_fields(proto_tree *uds_tree, packet_info *pinfo, tvbuff_t *tvb, gint offset)
+gint add_request_download_fields(proto_tree *uds_tree, packet_info *pinfo _U_, tvbuff_t *tvb, gint offset)
 {
         //guint8 data_format = tvb_get_guint8(tvb, offset);
 	guint8 length_address_format = tvb_get_guint8(tvb, offset + 1);
@@ -44,7 +44,7 @@ gint add_request_download_fields(proto_tree *uds_tree, packet_info *pinfo, tvbuf
 }
 
 
-gint add_request_download_response_fields(proto_tree *uds_tree, packet_info *pinfo, tvbuff_t *tvb, gint offset)
+gint add_request_download_response_fields(proto_tree *uds_tree, packet_info *pinfo _U_, tvbuff_t *tvb, gint offset)
 {
 
         guint8 length_address_format = tvb_get_guint8(tvb, offset);

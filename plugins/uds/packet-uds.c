@@ -122,7 +122,7 @@ gint add_header(proto_tree *uds_tree, tvbuff_t *tvb)
 }
 
 /* Uds protocol dissector */
-static int dissect_uds_message(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree, void* data)
+static int dissect_uds_message(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree, void* data _U_)
 {
     gint offset = 0;
     guint8 service = 0;
