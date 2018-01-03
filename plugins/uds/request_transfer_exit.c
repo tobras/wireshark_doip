@@ -12,7 +12,7 @@ static int hf_parameters = -1;
 
 static int hf_parameters_response = -1;
 
-gint add_request_transfer_exit_fields(proto_tree *uds_tree, packet_info *pinfo, tvbuff_t *tvb, gint offset)
+gint add_request_transfer_exit_fields(proto_tree *uds_tree, packet_info *pinfo _U_, tvbuff_t *tvb, gint offset)
 {
 	gint remaining = 0;
 
@@ -29,7 +29,7 @@ gint add_request_transfer_exit_fields(proto_tree *uds_tree, packet_info *pinfo, 
 }
 
 
-gint add_request_transfer_exit_response_fields(proto_tree *uds_tree, packet_info *pinfo, tvbuff_t *tvb, gint offset)
+gint add_request_transfer_exit_response_fields(proto_tree *uds_tree, packet_info *pinfo _U_, tvbuff_t *tvb, gint offset)
 {
 	gint remaining = 0;
 
