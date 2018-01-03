@@ -97,6 +97,7 @@ static const value_string uds_services[] = {
     { 0x76, "TransferData Response" },
     { 0x77, "RequestTransferExit Response" },
     { 0x7D, "WriteMemoryByAddress Response" },
+    { 0x7E, "TesterPresent Response" },
     { 0x7F, "Negative Response" },
 
     { 0xC3, "AccessTimingParameter Response" },
