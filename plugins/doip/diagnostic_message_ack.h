@@ -12,6 +12,6 @@ typedef struct tvbuff tvbuff_t;
 typedef int gint;
 
 gint add_diagnostic_message_ack_fields(proto_tree *doip_tree, tvbuff_t *tvb, gint offset);
-void proto_register_diagnostic_message_ack(gint proto_doip);
+void register_diagnostic_message_ack(gint proto_doip);
 
 #endif // DIAGNOSTIC_MESSAGE_ACK

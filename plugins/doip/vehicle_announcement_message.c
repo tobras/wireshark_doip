@@ -59,7 +59,7 @@ static const value_string action_codes[] = {
 };
 
 
-void proto_register_vehicle_announcement_message(gint proto_doip)
+void register_vehicle_announcement_message(gint proto_doip)
 {
 	static hf_register_info hf_vehicle_announcement_message[] = 
 	{

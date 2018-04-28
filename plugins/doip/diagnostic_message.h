@@ -21,6 +21,6 @@ typedef struct dissector_handle *dissector_handle_t;
 void set_uds_info(tvbuff_t *tvb, packet_info *pinfo, gint offset, dissector_handle_t uds_handle, proto_tree *parent_tree);
 
 gint add_diagnostic_message_fields(proto_tree *doip_tree, tvbuff_t *tvb, packet_info *pinfo, gint offset, dissector_handle_t uds_handle, proto_tree *parent_tree);
-void proto_register_diagnostic_message(gint proto_doip);
+void register_diagnostic_message(gint proto_doip);
 
 #endif // DIAGNOSTIC_MESSAGE

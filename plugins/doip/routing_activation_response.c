@@ -55,7 +55,7 @@ static const value_string activation_codes[] = {
     { 0, NULL }
 };
 
-void proto_register_routing_activation_response(gint proto_doip)
+void register_routing_activation_response(gint proto_doip)
 {
 	static hf_register_info hf_routing_activation_response[] = 
 	{

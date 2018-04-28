@@ -2,4 +2,4 @@
 # $Id$
 #
 
-m4_define([_CUSTOM_AC_OUTPUT_], [plugins/uds/Makefile plugins/doip/Makefile])
+m4_define([_CUSTOM_PLUGIN_CONFIG_FILES_], [plugins/epan/doip/Makefile])

@@ -12,6 +12,6 @@ typedef struct tvbuff tvbuff_t;
 typedef int gint;
 
 gint add_vehicle_announcement_message_fields(proto_tree *doip_tree, tvbuff_t *tvb, gint offset);
-void proto_register_vehicle_announcement_message(gint proto_doip);
+void register_vehicle_announcement_message(gint proto_doip);
 
 #endif // VEHICLE_ANNOUNCEMENT_MESSAGE

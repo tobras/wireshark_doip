@@ -22,9 +22,13 @@
 include(WiresharkPlugin)
 
 # Plugin name and version info (major minor micro extra)
-set_module_info(uds 1 1 0 0)
+set_module_info(doip 1 2 0 0)
 
 set(DISSECTOR_SRC
+	doip.c
+)
+
+set(DISSECTOR_SUPPORT_SRC
 	generic_header_nack.c
 	vehicle_announcement_message.c
 	vehicle_identification_eid.c
@@ -33,13 +37,9 @@ set(DISSECTOR_SRC
 	routing_activation_response.c
 	diagnostic_message.c
 	diagnostic_message_ack.c
-	diagnostic_message_nack.c 
-	packet-doip.c
+	diagnostic_message_nack.c
 )
 
-#set(DISSECTOR_SUPPORT_SRC
-#	wimax_tlv.c
-#)
 
 set(PLUGIN_FILES
 	plugin.c
@@ -61,19 +61,17 @@ endif()
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-register_dissector_files(plugin.c
+register_plugin_files(plugin.c
 	plugin
 	${DISSECTOR_SRC}
 	${DISSECTOR_SUPPORT_SRC}
 )
 
-add_plugin_library(doip)
+add_plugin_library(doip epan)
 
-install(TARGETS doip
-	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}/${CPACK_PACKAGE_NAME}/plugins/${CPACK_PACKAGE_VERSION} NAMELINK_SKIP
-	RUNTIME DESTINATION ${CMAKE_INSTALL_LIBDIR}/${CPACK_PACKAGE_NAME}/plugins/${CPACK_PACKAGE_VERSION}
-	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/${CPACK_PACKAGE_NAME}/plugins/${CPACK_PACKAGE_VERSION}
-)
+target_link_libraries(doip epan)
+
+install_plugin(doip epan)
 
 file(GLOB DISSECTOR_HEADERS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "*.h")
 CHECKAPI(

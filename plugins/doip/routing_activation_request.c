@@ -38,7 +38,7 @@ static const value_string activation_types[] = {
     { 0, NULL }
 };
 
-void proto_register_routing_activation_request(gint proto_doip)
+void register_routing_activation_request(gint proto_doip)
 {
 	static hf_register_info hf_routing_activation_request[] = 
 	{

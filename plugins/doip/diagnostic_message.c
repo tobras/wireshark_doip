@@ -35,7 +35,7 @@ gint add_diagnostic_message_fields(proto_tree *doip_tree, tvbuff_t *tvb, packet_
 }
 
 
-void proto_register_diagnostic_message(gint proto_doip)
+void register_diagnostic_message(gint proto_doip)
 {
 	static hf_register_info hf_diagnostic_message[] = 
 	{

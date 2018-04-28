@@ -18,7 +18,7 @@ gint add_vehicle_identification_eid_fields(proto_tree *doip_tree, tvbuff_t *tvb,
 }
 
 
-void proto_register_vehicle_identification_eid(gint proto_doip)
+void register_vehicle_identification_eid(gint proto_doip)
 {
 	static hf_register_info hf_vehicle_identification_eid[] = 
 	{

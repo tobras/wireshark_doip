@@ -12,6 +12,6 @@ typedef struct tvbuff tvbuff_t;
 typedef int gint;
 
 gint add_vehicle_identification_eid_fields(proto_tree *doip_tree, tvbuff_t *tvb, gint offset);
-void proto_register_vehicle_identification_eid(gint proto_doip);
+void register_vehicle_identification_eid(gint proto_doip);
 
 #endif // VEHICLE_IDENTIFICATION_EID

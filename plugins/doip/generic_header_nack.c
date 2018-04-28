@@ -27,7 +27,7 @@ static const value_string nack_codes[] = {
 };
 
 
-void proto_register_generic_header_nack(gint proto_doip)
+void register_generic_header_nack(gint proto_doip)
 {
 	static hf_register_info hf_generic_header_nack[] = 
 	{

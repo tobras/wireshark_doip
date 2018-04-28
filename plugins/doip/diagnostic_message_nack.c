@@ -47,7 +47,7 @@ static const value_string nack_codes[] = {
 
 
 
-void proto_register_diagnostic_message_nack(gint proto_doip)
+void register_diagnostic_message_nack(gint proto_doip)
 {
 	static hf_register_info hf_diagnostic_message_nack[] = 
 	{

@@ -38,7 +38,7 @@ static const value_string diag_ack_codes[] = {
 };
 
 
-void proto_register_diagnostic_message_ack(gint proto_doip)
+void register_diagnostic_message_ack(gint proto_doip)
 {
 
 	static hf_register_info hf_diagnostic_message_ack[] = 
