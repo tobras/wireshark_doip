@@ -2,6 +2,12 @@
 
 This is a DoIP protocol dissector for Wireshark.
 
+
+
+**An upcoming release of Wireshark will render this plugin obsolete. I have added the DoIP dissector to the Wireshark source. I.e. it will be an integrated part of Wireshark and no longer a plugin.**
+
+
+
 It supports the DoIP network/transport layer specified in ISO 13400-2. UDS (ISO 14229-1) application layer services is now a part of Wireshark.
 
 ![Screenshot](https://raw.github.com/tobras/wireshark_doip/master/screenshots/doip_uds.png)
