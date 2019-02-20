@@ -4,7 +4,7 @@ This is a DoIP protocol dissector for Wireshark.
 
 
 
-**An upcoming release of Wireshark will render this plugin obsolete. I have added the DoIP dissector to the Wireshark source. I.e. it will be an integrated part of Wireshark and no longer a plugin.**
+**Wireshark 3.0 will render this plugin obsolete. My DoIP dissector is included in Wireshark 3.0. I.e. it is an integrated part of Wireshark and no longer a plugin.**
 
 
 
